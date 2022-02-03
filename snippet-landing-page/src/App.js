@@ -1,8 +1,15 @@
 import React from 'react';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Webmain from './components/Webmain'
 
 function App() {
   return (
-    <h1>Snipper Landing Page</h1>
+    <>
+      <Header />
+        <Webmain />
+      <Footer />
+    </>
   );
 }
 

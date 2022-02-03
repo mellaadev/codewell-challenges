@@ -1,0 +1,50 @@
+.webmain
+{
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .webmain
+    {
+        padding: 5rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        align-items: center;
+    }
+}
+
+.webmain__image
+{
+    width: 80%;
+    grid-column: 2 / 3;
+}
+
+.webmain__textos
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.webmain__textos h2
+{
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.webmain__getstarted
+{
+    color: var(--blanco);
+    font-weight: var(--bold);
+    background-color: var(--negro);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    display: inline-block;
+}
+
+.webmain__free
+{
+    font-weight: var(--fina);
+}
