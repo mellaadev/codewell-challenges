@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Webmain.module.css'
+import styles from '../styles/Webmain.module.scss'
 
 const Webmain = () => {
   return (
