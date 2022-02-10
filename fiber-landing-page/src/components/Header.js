@@ -18,7 +18,7 @@ const Header = () => {
                 </div>
                 <img src='/img/hamburger_menu.svg' alt='hamburger menu' className={styles.barra__menuresp} />
             </div>
-            {/* A partir de aqui añadir estilos */}
+            
             <div className={styles.header__hero}>
 
                 <div className={styles.header__textos}>

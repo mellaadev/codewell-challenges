@@ -41,6 +41,13 @@
     }
 }
 
+.barra__links:hover,
+.barra__sesion:hover,
+.barra__brand:hover
+{
+    cursor: pointer;
+}
+
 .barra__iniciar
 {
     font-weight: var(--bold);
@@ -53,4 +60,134 @@
     padding: 1rem 2rem;
     color: var(--blanco);
     border-radius: .5rem;
+}
+
+.header__hero
+{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+    .header__hero
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: unset;
+        margin-top: 5rem;
+    }
+}
+
+.header__textos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.header__valoraciones
+{
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .header__valoraciones
+    {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.header__heading
+{
+    font-size: 4rem;
+}
+
+.header__subheading
+{
+    font-size: 1.4rem;
+}
+
+.header__options
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .header__options
+    {
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.header__option:first-of-type
+{
+    background-color: var(--morado);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    border-radius: .4rem;
+    font-weight: var(--bold);
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .header__option:first-of-type
+    {
+        display: inline-block;
+        width: auto;
+    }
+}
+
+.header__option:last-of-type
+{
+    color: var(--morado);
+    font-weight: var(--bold);
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.header__option:hover
+{
+    cursor: pointer;
+}
+
+.header__image
+{
+    width: 100%;
+}
+
+.header__additional
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .header__additional
+    {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+}
+
+.header__added
+{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }

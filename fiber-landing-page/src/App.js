@@ -1,11 +1,14 @@
 import React from 'react';
-import Header from './components/Header'
+import Layout from './components/Layout';
+import Fiber from './components/Fiber';
+import Portfolio from './components/Portfolio';
 
 function App() {
   return (
-    <>
-      <Header />
-    </>
+    <Layout>
+      <Fiber />
+      <Portfolio />
+    </Layout>
   );
 }
 
